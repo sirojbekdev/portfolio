@@ -1,0 +1,49 @@
+/* NavBar */
+.navbar-brand {
+  width: 16rem;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: var(--gold-accent) !important;
+  font-family: "Cinzel", serif;
+}
+/* Links */
+nav a.nav-link {
+  letter-spacing: 0.07rem;
+  cursor: pointer;
+}
+nav ul li {
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+}
+nav ul li:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  height: 0px;
+  width: 100%;
+  background: var(--gold-accent);
+  transition: all 0.3s;
+}
+nav ul li:hover:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  /* transform: all 3s;  */
+}
+.navbar-nav > li > a {
+  margin: 0 0.75rem;
+  color: var(--primary-white) !important;
+  border-bottom: 5px solid var(--primary-dark);
+}
+.navbar-nav > li > a:active,
+.navbar-nav > li > a:focus {
+  margin: 0 0.75rem;
+  color: var(--gold-accent) !important;
+  font-size: 1.1em;
+  border-bottom: 5px solid var(--gold-accent);
+}
